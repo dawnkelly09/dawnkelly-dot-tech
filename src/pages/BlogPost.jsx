@@ -38,15 +38,15 @@ export default function BlogPost() {
         <Markdown
           remarkPlugins={[remarkGfm]}
           components={{
-            h1: ({ children }) => <h1 className="text-lg text-terminal-green font-bold mt-8 mb-3">{children}</h1>,
-            h2: ({ children }) => <h2 className="text-base text-terminal-green font-bold mt-6 mb-2">{children}</h2>,
-            h3: ({ children }) => <h3 className="text-sm text-terminal-green font-bold mt-4 mb-2">{children}</h3>,
-            p: ({ children }) => <p className="text-terminal-white leading-relaxed mb-3">{children}</p>,
+            h1: ({ children }) => <h1 className="text-2xl text-terminal-green font-bold mt-8 mb-3">{children}</h1>,
+            h2: ({ children }) => <h2 className="text-xl text-terminal-green font-bold mt-6 mb-2">{children}</h2>,
+            h3: ({ children }) => <h3 className="text-lg text-terminal-green font-bold mt-4 mb-2">{children}</h3>,
+            p: ({ children }) => <p className="text-base text-terminal-white leading-relaxed mb-3">{children}</p>,
             a: ({ href, children }) => <a href={href} className="text-terminal-yellow hover:underline" target="_blank" rel="noopener noreferrer">{children}</a>,
             code: ({ inline, children }) =>
               inline !== false && !String(children).includes('\n')
-                ? <code className="bg-terminal-gray px-1.5 py-0.5 text-terminal-green text-xs">{children}</code>
-                : <pre className="bg-terminal-dark border border-terminal-gray p-4 overflow-x-auto text-xs my-3"><code className="text-terminal-green">{children}</code></pre>,
+                ? <code className="bg-terminal-gray px-1.5 py-0.5 text-terminal-green text-sm">{children}</code>
+                : <pre className="bg-terminal-dark border border-terminal-gray p-4 overflow-x-auto text-sm my-3"><code className="text-terminal-green">{children}</code></pre>,
             pre: ({ children }) => <>{children}</>,
             ul: ({ children }) => <ul className="space-y-1 ml-4">{children}</ul>,
             ol: ({ children }) => <ol className="space-y-1 ml-4 list-decimal">{children}</ol>,
