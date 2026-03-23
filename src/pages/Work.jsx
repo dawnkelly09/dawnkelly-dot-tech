@@ -54,7 +54,7 @@ const sections = [
     },
     link2: {
       label: 'AI Resources for Polkadot documentation →',
-      href: 'https://polkadot.network/ai-resources/'
+      href: 'https://docs.polkadot.com/ai-resources/'
     }
   },
 ]
