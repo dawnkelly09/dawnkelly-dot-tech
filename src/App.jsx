@@ -5,12 +5,14 @@ import Work from './pages/Work'
 import Blog from './pages/Blog'
 import BlogPost from './pages/BlogPost'
 import Contact from './pages/Contact'
+import Lab from './pages/Lab'
 
 function App() {
   return (
     <Routes>
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/lab" element={<Lab />} />
         <Route path="/work" element={<Work />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
