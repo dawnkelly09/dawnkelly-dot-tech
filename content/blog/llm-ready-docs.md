@@ -3,11 +3,13 @@ title: Build LLM-Ready Docs
  date: 2026-03-10
  description: One method to build documentation to fit the needs of users working with chat-based LLM assistants.
 slug: build-llm-ready-docs
+tags: [llm-ready-docs, documentation]
+status: published
 ---
 
 # Build LLM-Ready Docs
 
-Things in AI-assisted development continue to move at lightning speed, making working in this space both exciting and challenging right now. Creating documentation for use with chat-based LLMs like ChatGPT or Claude is now the minimum standard. If you aren't offering at least some of these features, you are already behind your competitors and peers. 
+Things in AI-assisted development continue to move at lightning speed, making working in this space both exciting and challenging right now. Creating documentation for use with chat-based LLMs like ChatGPT or Claude is now the minimum standard. If you aren't offering at least some of these features, you are already behind your competitors and peers.
 
 ## Beyond `/llms.txt` Files
 
@@ -33,7 +35,7 @@ With the category files in place, the natural next step was to make single pages
 - Resolve snippet and variable placeholder syntax with their actual values.
 - Strip any comments from the Markdown file.
 
-I started calling these "resolved Markdown" files to reflect the fact that they are more than "cleaned" to strip away HTML elements; they actually have the full content in place for an LLM to consume the same complete informational picture that a human user sees. Initially, these files were output to a hidden directory inside the documentation repo and served to the user via a dropdown widget embedded next to every page title H1 element. The process to sync the files when documentation changed was manually triggered by the Developer Relations Engineer at the time of the change commit. It worked, but it definitely needed some love. 
+I started calling these "resolved Markdown" files to reflect the fact that they are more than "cleaned" to strip away HTML elements; they actually have the full content in place for an LLM to consume the same complete informational picture that a human user sees. Initially, these files were output to a hidden directory inside the documentation repo and served to the user via a dropdown widget embedded next to every page title H1 element. The process to sync the files when documentation changed was manually triggered by the Developer Relations Engineer at the time of the change commit. It worked, but it definitely needed some love.
 
 ## Plugins to the Rescue
 
@@ -49,11 +51,11 @@ Complementary plugins were also created to improve maintainability and automate 
 
 ## Recent Updates and Roadmap
 
-I recently improved the `resolve_md` plugin to generate files that are more useful for developers working with LLM-based chat assistants. These updates include:  
+I recently improved the `resolve_md` plugin to generate files that are more useful for developers working with LLM-based chat assistants. These updates include:
 
 - Adding timestamps to LLM-ready files so LLMs can determine when a page was last updated without fetching the page first.
 - Adding version hashes so LLMs using files in a setting like RAG can tell if they have the most current version indexed without fetching the page and diffing it.
 
-Both of these changes make working with the LLM-ready files more context-window- and token-use-friendly. 
+Both of these changes make working with the LLM-ready files more context-window- and token-use-friendly.
 
-The explosion of agent-based development workflows means the road ahead involves redefining what "AI-ready docs" means. How do we design documentation that suits both the human user asking an LLM questions as they build and the agent user attempting to complete a task independently? Do we even know what agents find helpful or horrible about our existing documentation? These are the questions that shape the next steps in evolving documentation engineering to keep up with where builders are right now. Some of my initial answers are coming in a new post soon! 
+The explosion of agent-based development workflows means the road ahead involves redefining what "AI-ready docs" means. How do we design documentation that suits both the human user asking an LLM questions as they build and the agent user attempting to complete a task independently? Do we even know what agents find helpful or horrible about our existing documentation? These are the questions that shape the next steps in evolving documentation engineering to keep up with where builders are right now. Some of my initial answers are coming in a new post soon!
