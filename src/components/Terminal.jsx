@@ -9,6 +9,10 @@ const COMMANDS = {
     description: 'Go to home page',
     route: '/',
   },
+  lab: {
+    description: 'View lab experiments & builds',
+    route: '/lab',
+  },
   work: {
     description: 'View work & capabilities',
     route: '/work',
