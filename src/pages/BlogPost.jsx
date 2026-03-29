@@ -53,6 +53,10 @@ export default function BlogPost() {
             li: ({ children }) => <li className="text-terminal-white"><span className="text-terminal-green-dim">├─</span> {children}</li>,
             blockquote: ({ children }) => <blockquote className="border-l-2 border-terminal-green-50 pl-4 text-terminal-green-dim italic">{children}</blockquote>,
             hr: () => <hr className="border-terminal-gray my-6" />,
+            table: ({ children }) => <div className="overflow-x-auto my-4"><table className="w-full border-collapse border border-terminal-gray text-sm">{children}</table></div>,
+            thead: ({ children }) => <thead className="bg-terminal-gray">{children}</thead>,
+            th: ({ children }) => <th className="border border-terminal-gray px-3 py-2 text-terminal-green text-left font-bold">{children}</th>,
+            td: ({ children }) => <td className="border border-terminal-gray px-3 py-2 text-terminal-white">{children}</td>,
           }}
         >
           {post.content}

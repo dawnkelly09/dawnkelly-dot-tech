@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "AskUserQuestion",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Reminder: If this task introduces new routes, pages, dependencies, or architectural patterns, consider updating CLAUDE.md to reflect the changes.'"
+          }
+        ]
+      }
+    ]
+  }
+}
