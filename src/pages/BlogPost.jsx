@@ -2,6 +2,11 @@ import { useParams, Link } from 'react-router-dom'
 import Markdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { getPostBySlug } from '../data/blog'
+import RobotDemo from './RobotDemo'
+
+const componentMap = {
+  RobotDemo,
+}
 
 export default function BlogPost() {
   const { slug } = useParams()
@@ -17,6 +22,11 @@ export default function BlogPost() {
         </Link>
       </div>
     )
+  }
+
+  if (post.component && componentMap[post.component]) {
+    const InteractiveComponent = componentMap[post.component]
+    return <InteractiveComponent />
   }
 
   return (
