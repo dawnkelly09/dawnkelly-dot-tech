@@ -32,6 +32,7 @@ const posts = Object.entries(modules)
       title: meta.title || filename,
       date: meta.date || '',
       description: meta.description || '',
+      component: meta.component || null,
       readTime,
       content,
     }

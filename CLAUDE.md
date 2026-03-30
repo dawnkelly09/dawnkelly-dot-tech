@@ -21,4 +21,10 @@ React 19 SPA with React Router v7, styled with Tailwind CSS v4, built with Vite 
 
 **To add a new draft blog post:** Create a `.md` file in `content/drafts/` with frontmatter.
 
-**To add a new published blog post:** When the draft blog post is ready to publish, move the file to `blog/content`. When changes are next merged to main, the post will appear on the live site.
+**To add a new published blog post:** When the draft blog post is ready to publish, move the file to `content/blog/`. When changes are next merged to main, the post will appear on the live site.
+
+**Interactive blog posts:** Posts can render a React component instead of markdown. To create one:
+1. Build the component in `src/pages/` (it takes no props and owns its full layout).
+2. Add it to the `componentMap` in `src/pages/BlogPost.jsx`.
+3. Create a markdown stub in `content/blog/` with `component: ComponentName` in the frontmatter. The stub needs `title`, `date`, `description`, `slug`, and `component` fields — no body content required.
+The post will appear in the blog listing like any other post, but `BlogPost.jsx` renders the React component instead of markdown when the `component` field is present.
