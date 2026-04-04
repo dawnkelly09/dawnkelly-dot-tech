@@ -60,7 +60,7 @@ export default function BlogPost() {
             pre: ({ children }) => <>{children}</>,
             ul: ({ children }) => <ul className="space-y-1 ml-4">{children}</ul>,
             ol: ({ children }) => <ol className="space-y-1 ml-4 list-decimal">{children}</ol>,
-            li: ({ children }) => <li className="text-terminal-white"><span className="text-terminal-green-dim">├─</span> {children}</li>,
+            li: ({ children }) => <li className="text-terminal-white flex"><span className="text-terminal-green-dim shrink-0">├─&nbsp;</span><span>{children}</span></li>,
             blockquote: ({ children }) => <blockquote className="border-l-2 border-terminal-green-50 pl-4 text-terminal-green-dim italic">{children}</blockquote>,
             hr: () => <hr className="border-terminal-gray my-6" />,
             table: ({ children }) => <div className="overflow-x-auto my-4"><table className="w-full border-collapse border border-terminal-gray text-sm">{children}</table></div>,
