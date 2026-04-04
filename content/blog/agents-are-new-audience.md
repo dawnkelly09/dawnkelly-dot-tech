@@ -76,7 +76,7 @@ The teams that get here first will see it in adoption numbers. A developer whose
 
 ## Try It Yourself
 
-The agent-docs-audit skill is [open source](https://github.com/dawnkelly09/agent-docs-audit) and works with Claude Code's Cowork mode. Point it at any documentation site and get a scored baseline assessment. If you improve your docs and run it again with the original report, it produces a comparative evaluation showing exactly what changed and by how much.
+The agent-docs-audit skill is [open source](https://github.com/dawnkelly09/agent-ready-docs-eval-skill) and works with Claude Code's Cowork mode. Point it at any documentation site and get a scored baseline assessment. If you improve your docs and run it again with the original report, it produces a comparative evaluation showing exactly what changed and by how much.
 
 I'm actively working on the next piece of this puzzle: agent task files that let a coding agent complete an entire tutorial workflow from a single structured file. Early results are promising — I've validated task files that can execute a Uniswap v2 deployment with nothing but the skill file, a natural language prompt, and a human passing a private key when needed.
 
