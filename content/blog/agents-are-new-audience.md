@@ -80,4 +80,4 @@ The agent-docs-audit skill is [open source](https://github.com/dawnkelly09/agent
 
 I'm actively working on the next piece of this puzzle: agent task files that let a coding agent complete an entire tutorial workflow from a single structured file. Early results are promising — I've validated task files that can execute a Uniswap v2 deployment with nothing but the skill file, a natural language prompt, and a human passing a private key when needed.
 
-If you're thinking about what agent-ready docs means for your project, I'd love to hear about it. Find me on [X](https://x.com/dawnkelly09) or [LinkedIn](https://linkedin.com/in/dawnkelly09).
+If you're thinking about what agent-ready docs means for your project, I'd love to hear about it. Find me on [X](https://x.com/run4pancakes) or [LinkedIn](https://linkedin.com/in/dawnkelly09).
