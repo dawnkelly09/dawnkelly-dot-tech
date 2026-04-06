@@ -42,7 +42,7 @@ The key distinction: where LLM-ready docs are about sharing information to build
 
 ## A Skill to Make This Repeatable
 
-I'm quickly learning to reach for things like Claude Code skills to create structure around knowledge work I want to be able to repeat with consistent outputs. A skill is essentially a reusable prompt with instructions, reference files, and a defined workflow that Claude follows every time it's invoked. For this framework, I built an [agent-docs-audit skill](https://github.com/dawnkelly09/agent-docs-audit) that takes a documentation site URL and produces a professional report scoring it across all six dimensions.
+I'm quickly learning to reach for things like Claude Code skills to create structure around knowledge work I want to be able to repeat with consistent outputs. A skill is essentially a reusable prompt with instructions, reference files, and a defined workflow that Claude follows every time it's invoked. For this framework, I built an [agent-docs-audit skill](https://github.com/dawnkelly09/agent-ready-docs-eval-skill) that takes a documentation site URL and produces a professional report scoring it across all six dimensions.
 
 The skill packages everything: the evaluation criteria, a scoring rubric with calibrated thresholds, the reconnaissance and deep evaluation workflow, and two report formats — a baseline assessment for first-time evaluations, and a comparative "before/after" report for measuring improvement over time. The output is a `.docx` file suitable for sharing with technical leadership or potential clients.
 
