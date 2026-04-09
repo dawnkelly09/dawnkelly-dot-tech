@@ -5,7 +5,7 @@ description: "AI agents are a growing user persona for developer docs. Here's a 
 slug: agents-are-new-audience
 tags:
   [ai-agents, documentation, developer-experience, llms-txt, agent-readiness]
-status: draft
+status: published
 ---
 
 # Agents Are the New Audience
